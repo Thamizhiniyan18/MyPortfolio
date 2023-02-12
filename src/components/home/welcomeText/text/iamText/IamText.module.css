@@ -1,0 +1,16 @@
+.IamText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.letter {
+    width: 100px;
+    height: 100px;
+    color: white;
+    overflow-y: hidden;
+    border-radius: 15px;
+    margin: 0 2px;
+    font-size: 40px;
+}

@@ -1,10 +1,18 @@
-import Navbar from "./components/navbar/Navbar";
+// import Navbar from "./components/navbar/Navbar";
+import store from "./store/store";
+import { Provider } from "react-redux";
+import Container from "./components/container/Container";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        {/* <Navbar /> */}
+        <Container />
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 

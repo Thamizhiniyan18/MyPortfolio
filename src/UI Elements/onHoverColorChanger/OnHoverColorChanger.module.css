@@ -1,0 +1,13 @@
+.OnHoverColorChanger {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  transition: 2s ease;
+}
+
+.OnHoverColorChanger:hover {
+  transition: 0s ease;
+}
