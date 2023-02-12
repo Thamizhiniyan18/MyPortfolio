@@ -1,0 +1,22 @@
+.Dev {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.DevBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;  
+    object-position: 0;
+}
+
+.Dev h1 {
+    margin-right: 20px;
+}

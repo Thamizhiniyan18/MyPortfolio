@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./RainbowBox.module.css";
 import background from "../../../assets/Coding.jpg";
+import bubbles from "../../../assets/bubbles.png";
 import Box from "./box/Box";
 
 const colors = [
@@ -50,23 +51,22 @@ const RainbowBox = () => {
       <Box
         borderRadius="15px"
         background="rgba(255,255,255, 0) radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0.5) 100%)"
-        // background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 50%, rgba(0,0,0,1) 100%);"
         rotation="90deg"
         initialScale="1"
         finalScale="1"
         opacity="0"
       />
       <Box
-        // color={"white"}
         borderRadius="50%"
         background="transparent"
-        // background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 50%, rgba(0,0,0,1) 100%);"
         rotation="360deg"
         initialScale="1"
         finalScale="1"
       >
         Thamizhiniyan C S
       </Box>
+      <img className={`${styles.Bubble1} Bubbles`} src={bubbles} alt="" />
+      <img className={`${styles.Bubble2} Bubbles`} src={bubbles} alt="" />
     </div>
   );
 };

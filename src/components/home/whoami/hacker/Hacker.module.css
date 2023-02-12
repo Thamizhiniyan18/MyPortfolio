@@ -1,0 +1,21 @@
+.Hacker {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-Start;
+    flex-direction: column;
+    transform: translateX(100%);
+    opacity: 0;    
+}
+
+.HackerBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;  
+}
+
+.Hacker h1 {
+    margin-left: 20px;
+}

@@ -24,12 +24,10 @@ const Box = ({
     timeline.current = gsap.timeline();
 
     timeline.current.fromTo(
-      box.current,
+      [box.current],
       {},
       {
         rotate: `${rotation}`,
-        y: 0,
-        x: 0,
         opacity: 1,
         fontSize: "60px",
         scale: `${finalScale}`,
@@ -42,6 +40,17 @@ const Box = ({
         },
       }
     );
+
+    timeline.current.to(document.querySelectorAll(".Bubbles"), {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: box.current,
+        scrub: 4,
+        start: "top 50%",
+        end: () => "+=200",
+      },
+    });
   }, [rotation, finalScale, duration]);
 
   return (
@@ -53,9 +62,8 @@ const Box = ({
         zIndex: `${zIndex}`,
         borderRadius: `${borderRadius}`,
         background: `${background}`,
-        // background:``,
         scale: `${initialScale}`,
-        opacity: `${opacity}`
+        opacity: `${opacity}`,
       }}
       ref={box}
     >

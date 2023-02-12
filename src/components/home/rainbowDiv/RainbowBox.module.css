@@ -19,3 +19,13 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+.Bubble1 {
+  transform: scaleX(-1) translateX(300px) translateY(300px);
+  opacity: 0;
+}
+
+.Bubble2 {
+  transform: translateX(300px) translateY(300px);
+  opacity: 0;
+}
