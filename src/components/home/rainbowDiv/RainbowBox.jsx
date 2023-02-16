@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RainbowBox.module.css";
 import background from "../../../assets/Coding.jpg";
-import bubbles from "../../../assets/bubbles.png";
+// import bubbles from "../../../assets/bubbles.png";
 import Box from "./box/Box";
 
 const colors = [
@@ -65,8 +65,8 @@ const RainbowBox = () => {
       >
         Thamizhiniyan C S
       </Box>
-      <img className={`${styles.Bubble1} Bubbles`} src={bubbles} alt="" />
-      <img className={`${styles.Bubble2} Bubbles`} src={bubbles} alt="" />
+      {/* <img className={`${styles.Bubble1} Bubbles`} src={bubbles} alt="" />
+      <img className={`${styles.Bubble2} Bubbles`} src={bubbles} alt="" /> */}
     </div>
   );
 };

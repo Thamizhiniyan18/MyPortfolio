@@ -5,7 +5,7 @@ import hackerbg from "../../../../assets/hackerbg.mp4"
 const Hacker = () => {
   return (
     <div id="Hacker" className={styles.Hacker}>
-      <video autoplay="true" muted loop className={styles.HackerBg}>
+      <video autoPlay muted loop className={styles.HackerBg}>
         <source src={hackerbg} type="video/mp4" />
       </video>
       <div className="OverLay"></div>

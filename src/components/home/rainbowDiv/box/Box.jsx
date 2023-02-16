@@ -41,16 +41,16 @@ const Box = ({
       }
     );
 
-    timeline.current.to(document.querySelectorAll(".Bubbles"), {
-      y: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: box.current,
-        scrub: 4,
-        start: "top 50%",
-        end: () => "+=200",
-      },
-    });
+    // timeline.current.to(document.querySelectorAll(".Bubbles"), {
+    //   y: 0,
+    //   opacity: 1,
+    //   scrollTrigger: {
+    //     trigger: box.current,
+    //     scrub: 4,
+    //     start: "top 50%",
+    //     end: () => "+=200",
+    //   },
+    // });
   }, [rotation, finalScale, duration]);
 
   return (
